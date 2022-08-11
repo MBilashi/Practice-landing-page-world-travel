@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Merriweather', serif;
+    color: black;
+}
+.main_container{
+    width: 100%;
+    height: 100vh;
+    background: url("./image/background.jpg");
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.header{
+    background: #FFFFFF;
+    width: 30%;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+.logo{
+    width: 30%;
+    margin: auto;
+}
+.logo p:after {
+    content:" travel";
+    font-weight: 900;
+}
+hr{
+    width: 85%;
+    margin: auto;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+.menu ul li{
+    list-style-type: none;
+    padding: 10px 0px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+}
+.menu ul li a:hover{
+    background: gray;
+    color: #FFFFFF;
+    border-radius: 10px 10px 0px 0px;
+}
+.main_box{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left_box{
+    /* background-color: #fff; */
+    width: 47%;
+    height: 100vh;
+}
+.left_overlay{
+    background:linear-gradient(30deg, rgb(108, 105, 105),rgb(16, 15, 15) 10% 60%, rgb(154, 138, 138)  );
+    width: 100%;
+    height: 100vh;
+    opacity: .8;
+}
+.left_text{
+    position:absolute;
+    top: 22%;
+    left: 11%;
+    /* background: white; */
+    width: 40%;
+    opacity: .5;
+}
+.left_text span{
+   display: block;
+   position: absolute;
+   top: 2%;
+   
+}
+.left_text span::after {
+    content:'Discover';
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.left_text h1{
+    margin-bottom: 60px;
+    padding: 0;
+}
+.left_text h1::after {
+    content:' A NEW';
+    font-size: 140px;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+.left_text h3::after {
+    content:'EXPLORE YOUR DREAMLAND';
+    color: #FFFFFF;
+    font-size: 28px;
+}
+.left_text p{
+    color: white;
+    width: 420px;
+    font-size: 12px;
+    text-align: justify;
+    margin-top: 20px;
+} 
+.left_text p a {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 2px;
+    margin-left: 5px;
+}
+.left_text p a i{
+    color: #fff;
+}
+
+.right_box{
+    width: 53%;
+    height: 100%;
+    /* background-color:black; */
+}
+.right_box .right_text{
+    position:absolute;
+    top: 40%;
+    right:12%;
+    /* background: white; */
+    width: 40%;
+    /* height: 100%; */
+    /* opacity: .5; */
+}
+.right_box .right_text h1::after {
+    content:'WORLD';
+    font-size: 140px;
+    font-weight: 900;
+    color: #f4f6f790;
+}
+.footer{
+    position: absolute;
+    bottom:0%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    background: #FFFFFF;
+    width: 20%;
+    border-radius: 15px 15px 0px 0px;
+}
+.footer .icon{
+    width: 80%;
+    padding:10px;
+    margin: auto; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+.footer .icon .icon_link a{
+   color: #031019;
+   font-size: 14px;
+}
